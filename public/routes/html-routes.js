@@ -5,7 +5,7 @@ const path = require("path");
 
 
 // defines the route that sends "index.html" as a response to the client
-router.get('/',  (req, res) => {
+router.get('*',  (req, res) => {
     res.sendFile(path.join(__dirname, "./public/index.html"))
 });
 

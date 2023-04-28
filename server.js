@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true })); //this is for the front end
 app.use(express.jason());
 app.use(express.static("public"));	//this is for the front end
-app.use(html.routes);
-app.use(api.routes);
+app.use(htmlRoutes);
+app.use(apiRoutes);
 
 
 

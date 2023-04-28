@@ -10,18 +10,23 @@ Created for the small business owner in mind, note-taker allows the user to writ
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Walk Through Video](#walkThrough)
+- [Deployed Link](#deployedLink)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
 
 ## Installation
-- 
+- Clone the Repository from Github
+- Open the cloned repo in any code editor
+- Open the intergrated terminal for the document and complete the installation process to 
 
 ## Usage
 - In the terminal run node index.js
 - 
-
+## Walk Through Video
+## Deployed Link
 ## Contributing
 chelmore1@bigpond.com
 

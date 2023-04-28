@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require("uuid");
 
 //get request to display the notes.html page
 router.get("/api/notes", async (req, res) => {
-    const dbNotes = await JSON.parse(fs.readFileSync("./db/db.ntoes", "utf8"));
+    const dbNotes = await JSON.parse(fs.readFileSync("./db/db.notes", "utf8"));
         res.json(dbNotes);
 });
        

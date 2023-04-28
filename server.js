@@ -2,8 +2,8 @@
 const express = require("express");
 
 //point server to the route files
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
+const apiRoutes = require(".public/routes/apiRoutes");
+const htmlRoutes = require(".public/routes/htmlRoutes");
 
 //create an express server
 const app = express();
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 //middleware will run the operations in the order they are written
 app.use(express.urlencoded({ extended: true })); //this is for the front end
-app.use(express.jason());
+app.use(express.json());
 app.use(express.static("public"));	//this is for the front end
 app.use(htmlRoutes);
 app.use(apiRoutes);

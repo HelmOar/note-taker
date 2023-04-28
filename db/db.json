@@ -1,1 +1,12 @@
-[{"title":"Lunch with client","text":"At La Boheme \n","id":"507da043-0d50-4cfd-957e-276869334918"},{"title":"Meeting","text":"client presentation\n","id":"59452856-1727-443c-addb-3922d48620f4"}]
+[
+    {
+        "title": "Lunch with client",
+        "text": "At La Boheme \n",
+        "id": "507da043-0d50-4cfd-957e-276869334918"
+    },
+    {
+        "title": "Meeting",
+        "text": "client presentation\n",
+        "id": "59452856-1727-443c-addb-3922d48620f4"
+    }
+]

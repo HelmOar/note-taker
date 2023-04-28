@@ -18,7 +18,7 @@ router.post("/api/notes", (req, res) => {
     const newNote = req.body;
     newNote.id = uuidv4();
     dbNotes.push(newNote);
-    fs.writeFileSync("./db/db.json", JSON.stringify(dbNotes));
+    fs.writeFileSync("./db/db.json", JSON.stringify(dbNotes , null, 4));
     res.json(dbNotes);
 
 });
@@ -28,6 +28,7 @@ router.delete("/api/notes/:id", (req, res) => {
     const data = fs.readFileSync("./db/db.json", "utf8");
     const dbNotes = JSON.parse(data);
     const newNotes = dbNotes.filter((note) => note.id !== req.params.id);
+    fs.writeFileSync("./db/db.json", JSON.stringify(newNotes, null, 4));
     res.json("Note has been deleted");
 });
 

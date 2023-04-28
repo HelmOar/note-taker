@@ -13,8 +13,7 @@ router.get("/api/notes", async (req, res) => {
 
 
 //Post request 
-router.post("/alls
-cdpi/notes", (req, res) => {
+router.post("/api/notes", (req, res) => {
     const dbNotes = JSON.parse(fs.readFileSync("./db/db.notes", "utf8"));
     const newNotes = {
         title: req.body.title,

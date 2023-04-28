@@ -2,8 +2,8 @@
 const express = require("express");
 
 //point server to the route files
-const apiRoutes = require(".public/routes/apiRoutes");
-const htmlRoutes = require(".public/routes/htmlRoutes");
+const apiRoutes = require("./public/routes/api-routes");
+const htmlRoutes = require("./public/routes/html-routes");
 
 //create an express server
 const app = express();
@@ -20,6 +20,6 @@ app.use(apiRoutes);
 
 
 
-app.listen(Port, () => {
+app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });

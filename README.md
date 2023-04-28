@@ -20,18 +20,28 @@ Created for the small business owner in mind, note-taker allows the user to writ
 ## Installation
 - Clone the Repository from Github
 - Open the cloned repo in any code editor
-- Open the intergrated terminal for the document and complete the installation process to 
+- Open the intergrated terminal for the document and complete the installation process by intiating node and Express.
 
 ## Usage
-- In the terminal run node index.js
-- 
+- Open the [note-taker link](Http)
+- Click "get started" to open the note taker.
+- Enter your note via the "title"and "text" fields.
+- Click the save icon to save the note.
+- Click the + icon to add further notes.
+- In addition, you can delete the note via the trash icon.
+
 ## Walk Through Video
+
+[Video](http..bla bal)
+
 ## Deployed Link
+[note-taker](Http...)
+
 ## Contributing
 chelmore1@bigpond.com
 
 ## Tests
-
+- No tests have been designed for this app
 
 ## License 📛
       Copyright © MIT. All rights reserved. 

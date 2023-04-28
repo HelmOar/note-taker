@@ -13,11 +13,11 @@ const PORT = process.env.PORT || 3000;
 
 //middleware will run the operations in the order they are written
 //parse inconming string or array data
-app.use(express.urlencoded({ extended: true })); //this is for the front end
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));	//this is for the front end
-app.use(htmlRoutes);
 app.use(apiRoutes);
+app.use(htmlRoutes);
 
 
 

@@ -5,8 +5,8 @@ const { v4: uuidv4 } = require("uuid");
 
 
 //get request to display the notes.html page
-router.get("/api/notes", async (req, res) => {
-    const dbNotes = await JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+router.get("/api/notes", (req, res) => {
+    const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
         res.json(dbNotes);
 });
        
@@ -14,20 +14,22 @@ router.get("/api/notes", async (req, res) => {
 
 //Post request 
 router.post("/api/notes", (req, res) => {
-    const dbNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
-    const newNotes = {
-        title: req.body.title,
-        text: req.body.text,
-        id: uuidv4(),
-    };
-    fs.writeFileSync("./db/db.json", JSON.stringify(newNotes));
-    res.json (dbNotes)
-    
+    const dbNotes =  JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    const newNote = req.body;
+    newNote.id = uuidv4();
+    dbNotes.push(newNote);
+    fs.writeFileSync("./db/db.json", JSON.stringify(dbNotes));
+    res.json(dbNotes);
 
 });
   
 //Delete request ......
-
+router.delete("/api/notes/:id", (req, res) => {
+    const data = fs.readFileSync("./db/db.json", "utf8");
+    const dbNotes = JSON.parse(data);
+    const newNotes = dbNotes.filter((note) => note.id !== req.params.id);
+    res.json("Note has been deleted");
+});
 
 
 

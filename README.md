@@ -33,9 +33,10 @@ Created for the small business owner in mind, note-taker allows the user to writ
 
 ## Walk Through Video
 
-[Video](http..bla bal)
+[Video](https://user-images.githubusercontent.com/122151785/235273571-19943b88-9534-47a7-ad6b-fb226b9b58bc.mp4)
 
 ## Deployed Link
+
 [note-taker](https://note-taker-cah.herokuapp.com/)
 
 ## Contributing

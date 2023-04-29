@@ -21,9 +21,10 @@ Created for the small business owner in mind, note-taker allows the user to writ
 - Clone the Repository from Github
 - Open the cloned repo in any code editor
 - Open the intergrated terminal for the document and complete the installation process by intiating node and Express.
+- You will also require [uuidv4](https://www.npmjs.com/package/uuidv4) in order to assign unique IDs to the notes.
 
 ## Usage
-- Open the [note-taker link](Http)
+- Open the [note-taker link](https://note-taker-cah.herokuapp.com/)
 - Click "get started" to open the note taker.
 - Enter your note via the "title"and "text" fields.
 - Click the save icon to save the note.
@@ -35,7 +36,7 @@ Created for the small business owner in mind, note-taker allows the user to writ
 [Video](http..bla bal)
 
 ## Deployed Link
-[note-taker](Http...)
+[note-taker](https://note-taker-cah.herokuapp.com/)
 
 ## Contributing
 chelmore1@bigpond.com

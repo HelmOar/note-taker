@@ -31,6 +31,9 @@ Created for the small business owner in mind, note-taker allows the user to writ
 - Click the + icon to add further notes.
 - In addition, you can delete the note via the trash icon.
 
+![screenshot Notetaker](https://user-images.githubusercontent.com/122151785/235274164-298467e0-fa3a-4cba-b8ac-8075b2a34cd3.png)
+
+
 ## Walk Through Video
 
 [Video](https://user-images.githubusercontent.com/122151785/235273571-19943b88-9534-47a7-ad6b-fb226b9b58bc.mp4)
